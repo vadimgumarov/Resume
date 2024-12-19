@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Anderson - Senior QA Professional</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --border-color: #e1e8ed;
+            --section-spacing: 2.5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            margin-bottom: var(--section-spacing);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .contact {
+            display: flex;
+            gap: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact a:hover {
+            color: var(--primary-color);
+        }
+
+        section {
+            margin-bottom: var(--section-spacing);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .summary {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-header, .education-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .company, .school {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .title {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .date {
+            color: var(--secondary-color);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .skills-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .skills-list {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Michael Anderson</h1>
+            <p class="subtitle">Senior Quality Assurance Professional</p>
+            <div class="contact">
+                <a href="mailto:m.anderson@example.com">m.anderson@example.com</a>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="https://linkedin.com/in/manderson">LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">Senior Quality Assurance Professional with 13 years of experience in telecommunications and entertainment industries. Specialized in end-to-end testing methodologies, test automation, and quality process improvement. Proven track record of leading QA teams and implementing robust testing frameworks that significantly improve product quality and reduce time-to-market.</p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Global Entertainment Corp</span>
+                    <span class="date">2016 - Present</span>
+                </div>
+                <p class="title">Senior QA Manager</p>
+                <ul>
+                    <li>Led the transformation of QA processes across 5 product lines, resulting in 40% reduction in post-release defects</li>
+                    <li>Implemented automated testing frameworks that reduced regression testing time by 60%</li>
+                    <li>Managed a team of 15 QA engineers across multiple international locations</li>
+                    <li>Established comprehensive test strategies for streaming platforms serving 10M+ users</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">TelecomTech Solutions</span>
+                    <span class="date">2011 - 2016</span>
+                </div>
+                <p class="title">QA Team Lead</p>
+                <ul>
+                    <li>Directed testing efforts for mission-critical telecommunications systems</li>
+                    <li>Developed and maintained test automation frameworks using Python and Selenium</li>
+                    <li>Reduced manual testing effort by 50% through strategic test automation</li>
+                    <li>Implemented performance testing practices that identified and resolved critical bottlenecks</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Testing Tools</h3>
+                    <ul class="skills-list">
+                        <li>Selenium WebDriver</li>
+                        <li>JMeter</li>
+                        <li>TestRail</li>
+                        <li>JIRA</li>
+                        <li>Jenkins</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Programming</h3>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Methodologies</h3>
+                    <ul class="skills-list">
+                        <li>Agile/Scrum</li>
+                        <li>CI/CD</li>
+                        <li>TDD/BDD</li>
+                        <li>Performance Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <span class="school">University of Technology</span>
+                    <span class="date">2007 - 2011</span>
+                </div>
+                <p>B.S. in Computer Science</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
