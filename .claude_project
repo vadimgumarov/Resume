@@ -1,0 +1,361 @@
+# Personal Portfolio - GitHub Pages Website
+
+## PROJECT OVERVIEW
+
+### Goal
+Create a professional, minimalist personal portfolio website for GitHub Pages deployment, inspired by doronichev.com design principles.
+
+### Core Requirements
+- Clean, minimalist design with focus on content
+- Mobile-responsive layout
+- Fast loading and optimized performance
+- SEO-friendly structure
+- Accessible to all users
+- Easy to maintain and update
+
+## ARCHITECTURE PRINCIPLES
+
+### Design Philosophy
+- **Minimalist**: Remove everything unnecessary, focus on essential information
+- **Professional**: Clean typography, proper spacing, sophisticated color palette
+- **Responsive**: Mobile-first approach, works on all devices
+- **Performant**: Optimized assets, minimal dependencies, fast load times
+- **Accessible**: Semantic HTML, keyboard navigation, screen reader support
+
+### Technology Stack
+- **HTML5**: Semantic markup
+- **CSS3**: Modern styling with CSS Grid/Flexbox
+- **Vanilla JavaScript**: Minimal scripting for interactions
+- **GitHub Pages**: Static hosting
+- **No frameworks**: Keep it simple and fast
+
+## PROJECT STRUCTURE
+
+```
+PersonalPortfolio/
+├── index.html           # Main portfolio page
+├── styles/
+│   ├── main.css        # Primary stylesheet
+│   ├── responsive.css  # Media queries
+│   └── animations.css  # Hover effects and transitions
+├── scripts/
+│   └── main.js         # Minimal JavaScript for interactions
+├── assets/
+│   ├── images/         # Profile photo, logos, etc.
+│   │   ├── profile/    # Personal photos
+│   │   ├── projects/   # Project screenshots
+│   │   └── icons/      # Social media icons, etc.
+│   └── documents/      # Resume PDF, etc.
+├── sections/           # Optional: separate HTML sections
+│   ├── hero.html      # Hero section template
+│   ├── about.html     # About section
+│   ├── projects.html  # Projects showcase
+│   └── contact.html   # Contact information
+├── CNAME              # Custom domain (if applicable)
+├── .nojekyll          # Disable Jekyll processing
+├── robots.txt         # SEO configuration
+├── sitemap.xml        # SEO sitemap
+└── docs/
+    ├── PROGRESS.md    # Development progress
+    └── ISSUES.md      # Problem/solution log
+```
+
+## CORE SECTIONS
+
+### 1. Hero Section
+- **Purpose**: First impression with name and professional tagline
+- **Elements**: Name, title, brief tagline, professional photo
+- **Design**: Large typography, centered content, subtle animation
+
+### 2. About Section
+- **Purpose**: Professional summary and background
+- **Elements**: Bio paragraph, key skills, professional journey
+- **Design**: Clean typography, readable line length, proper spacing
+
+### 3. Experience/Projects
+- **Purpose**: Showcase work and achievements
+- **Elements**: Project cards, descriptions, links to live sites/repos
+- **Design**: Grid layout, hover effects, clear CTAs
+
+### 4. Skills & Expertise
+- **Purpose**: Technical and professional capabilities
+- **Elements**: Skill categories, proficiency levels
+- **Design**: Visual representation (bars, tags, or icons)
+
+### 5. Contact Section
+- **Purpose**: Enable professional connections
+- **Elements**: Email, LinkedIn, GitHub, other professional links
+- **Design**: Clear CTAs, social media icons, contact form (optional)
+
+## DESIGN SPECIFICATIONS
+
+### Color Palette
+```css
+:root {
+  --primary-dark: #0a0a0a;      /* Main text */
+  --primary-light: #ffffff;     /* Background */
+  --accent-blue: #0a84ff;       /* Links, CTAs */
+  --gray-medium: #666666;       /* Secondary text */
+  --gray-light: #f5f5f5;        /* Backgrounds */
+  --shadow: rgba(0,0,0,0.1);    /* Shadows */
+}
+```
+
+### Typography
+```css
+/* System font stack for performance */
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+             'Helvetica Neue', Arial, sans-serif;
+
+/* Font sizes */
+--font-hero: clamp(2rem, 5vw, 4rem);
+--font-heading: clamp(1.5rem, 3vw, 2.5rem);
+--font-body: 1rem;
+--font-small: 0.875rem;
+```
+
+### Spacing System
+```css
+/* 8px base unit */
+--space-xs: 0.5rem;   /* 8px */
+--space-sm: 1rem;     /* 16px */
+--space-md: 2rem;     /* 32px */
+--space-lg: 3rem;     /* 48px */
+--space-xl: 4rem;     /* 64px */
+```
+
+### Responsive Breakpoints
+```css
+/* Mobile first approach */
+--mobile: 320px;      /* Base */
+--tablet: 768px;      /* Tablet portrait */
+--desktop: 1024px;    /* Desktop */
+--wide: 1440px;       /* Wide screens */
+```
+
+## DEVELOPMENT GUIDELINES
+
+### Version Control
+```
+Commit Format: type: description (#ISSUE)
+Types: feat, fix, docs, refactor, test, perf, chore
+
+IMPORTANT: Never add "🤖 Generated with Claude Code" or "Co-Authored-By: Claude" signatures
+Keep commits clean and professional
+```
+- Every commit needs issue reference (except chore)
+- Commit frequently at logical breakpoints
+- Push daily for backup
+- Never force push to shared branches
+- Clean commit history before PR (squash/rebase)
+
+### HTML Standards
+- Use semantic HTML5 elements
+- Include proper meta tags for SEO
+- Add alt text for all images
+- Use ARIA labels where needed
+- Validate with W3C validator
+
+### CSS Best Practices
+- Mobile-first responsive design
+- Use CSS custom properties for theming
+- Minimize use of !important
+- Group related properties
+- Comment complex sections
+
+### JavaScript Guidelines
+- Progressive enhancement approach
+- Vanilla JS only, no frameworks
+- Minimal DOM manipulation
+- Event delegation where possible
+- Graceful degradation
+
+### Performance Optimization
+- Optimize images (WebP with fallbacks)
+- Minify CSS and JavaScript
+- Lazy load below-the-fold content
+- Use system fonts when possible
+- Enable browser caching
+
+### Accessibility Requirements
+- WCAG 2.1 AA compliance
+- Keyboard navigation support
+- Focus indicators
+- Color contrast ratios (4.5:1 minimum)
+- Screen reader friendly
+
+## GITHUB PAGES SETUP
+
+### Deployment Steps
+1. Push code to main branch
+2. Enable GitHub Pages in repository settings
+3. Select main branch as source
+4. Add custom domain (optional)
+5. Enable HTTPS
+
+### Configuration Files
+- `.nojekyll`: Prevents Jekyll processing
+- `CNAME`: Custom domain configuration
+- `404.html`: Custom 404 page (optional)
+- `robots.txt`: SEO crawler instructions
+- `sitemap.xml`: Site structure for search engines
+
+## CONTENT GUIDELINES
+
+### Writing Style
+- Professional but personable
+- Concise and clear
+- Action-oriented language
+- Highlight achievements with metrics
+- Use active voice
+
+### Image Guidelines
+- Professional headshot (circular crop)
+- Project screenshots (16:9 ratio)
+- Company/tech logos (SVG preferred)
+- Optimize all images (<200KB each)
+- Use descriptive filenames
+
+### SEO Optimization
+- Descriptive page title
+- Meta description
+- Open Graph tags
+- Twitter Card tags
+- Structured data (JSON-LD)
+- Clean URL structure
+
+## TESTING CHECKLIST
+
+### Before Deployment
+- [ ] HTML validation passes
+- [ ] CSS validation passes
+- [ ] Mobile responsive testing
+- [ ] Cross-browser testing (Chrome, Firefox, Safari)
+- [ ] Accessibility audit
+- [ ] Performance audit (Lighthouse)
+- [ ] SEO audit
+- [ ] Dead link check
+- [ ] Image optimization check
+- [ ] Console error check
+
+### Browser Support
+- Chrome (latest 2 versions)
+- Firefox (latest 2 versions)
+- Safari (latest 2 versions)
+- Edge (latest 2 versions)
+- Mobile Safari (iOS 12+)
+- Chrome Mobile (Android 8+)
+
+## MAINTENANCE
+
+### Regular Updates
+- Update project portfolio
+- Refresh professional bio
+- Update skills and technologies
+- Check for broken links
+- Update contact information
+- Review and update SEO tags
+
+### Performance Monitoring
+- Google Analytics (optional)
+- Page speed monitoring
+- User feedback collection
+- Browser compatibility checks
+- Accessibility audits
+
+## FUTURE ENHANCEMENTS
+
+### Phase 2
+- Blog section with markdown support
+- Dark mode toggle
+- Animated skill bars
+- Project filtering/categories
+- Testimonials section
+
+### Phase 3
+- Multi-language support
+- Contact form with backend
+- Newsletter subscription
+- Resume PDF generator
+- Case study pages
+
+## KEY COMMANDS
+
+### Development
+```bash
+# Start local server
+python -m http.server 8000
+# or
+npx serve
+
+# Validate HTML
+npx html-validator index.html
+
+# Check accessibility
+npx pa11y index.html
+
+# Optimize images
+npx imagemin assets/images/* --out-dir=assets/images/optimized
+
+# Generate sitemap
+npx sitemap-generator
+```
+
+### Git Workflow
+```bash
+# Create feature branch
+git checkout -b feature/section-name
+
+# Commit changes (NO CLAUDE SIGNATURES)
+git add .
+git commit -m "feat: add hero section (#1)"
+
+# Push to GitHub
+git push origin feature/section-name
+
+# Create pull request
+gh pr create --title "Add hero section" --body "Implements hero section with responsive design"
+```
+
+## CURRENT TASK TRACKING
+
+### GitHub Repository
+- **URL**: https://github.com/vadimgumarov/Resume
+
+### GitHub Project Board
+- **URL**: https://github.com/users/vadimgumarov/projects/10
+- **Columns**: Todo, In Progress, In Review, Done
+- **Issue Labels**:
+  - `enhancement`: New features
+  - `bug`: Something isn't working
+  - `documentation`: Documentation updates
+  - `design`: UI/UX improvements
+  - `performance`: Optimization tasks
+
+### Issue Templates
+Use GitHub's issue templates for consistent tracking:
+- Feature Request
+- Bug Report
+- Design Update
+- Content Update
+
+## SUCCESS METRICS
+
+### Performance
+- [ ] Lighthouse score >95
+- [ ] First Contentful Paint <1.5s
+- [ ] Time to Interactive <3s
+- [ ] Total page weight <500KB
+
+### Quality
+- [ ] W3C validation passes
+- [ ] WCAG 2.1 AA compliant
+- [ ] Mobile-friendly test passes
+- [ ] Cross-browser compatibility verified
+
+### User Experience
+- [ ] Clear navigation
+- [ ] Fast load times
+- [ ] Smooth animations
+- [ ] Professional appearance
+- [ ] Easy to contact
