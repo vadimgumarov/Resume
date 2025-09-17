@@ -46,7 +46,7 @@
             grid-template-columns: 1fr auto;
             gap: 80px;
             align-items: start;
-            margin-bottom: 120px;
+            margin-bottom: 60px;
         }
 
         .hero-content {
@@ -135,16 +135,41 @@
             fill: currentColor;
         }
 
+        /* Section Separator */
+        .section-separator {
+            height: 1px;
+            background-color: var(--gray-border);
+            margin: 40px 0;
+        }
+
         /* Company Logos */
         .company-logos {
             display: flex;
             align-items: center;
-            gap: 40px;
-            margin-bottom: 80px;
-            opacity: 0.6;
+            gap: 30px;
+            margin: 40px 0;
+            padding: 30px 0;
+            border-top: 1px solid var(--gray-border);
+            border-bottom: 1px solid var(--gray-border);
         }
 
         .company-logo {
+            color: var(--gray-medium);
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .company-logo svg {
+            height: 24px;
+            width: auto;
+        }
+
+        .company-logo img {
+            height: 100%;
+            width: auto;
+        }
+
+        .company-logo-text {
             font-size: 18px;
             font-weight: 500;
             color: var(--gray-medium);
@@ -158,17 +183,17 @@
 
         /* Section Headers */
         .section-header {
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 400;
             color: var(--gray-medium);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             margin-bottom: 32px;
         }
 
         /* What I Can Help With */
         .help-section {
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         .help-list {
@@ -179,12 +204,13 @@
 
         .help-list li {
             color: var(--primary-dark);
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            font-weight: 400;
         }
 
         /* Experience */
         .experience-section {
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         .experience-item {
@@ -192,8 +218,8 @@
         }
 
         .experience-role {
-            font-size: 18px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 700;
             color: var(--primary-dark);
             margin-bottom: 8px;
         }
@@ -295,12 +321,12 @@
 
         <!-- Company Logos -->
         <div class="company-logos">
-            <span class="company-logo">Verizon</span>
-            <span class="company-logo">NBCU</span>
-            <span class="company-logo">Peacock</span>
-            <span class="company-logo">VH VVaG</span>
-            <span class="company-logo">JAUGAPOL</span>
-            <span class="company-logo">JURATE HOTEL</span>
+            <span class="company-logo-text">Verizon</span>
+            <span class="company-logo-text">NBCU</span>
+            <span class="company-logo-text">Peacock</span>
+            <span class="company-logo-text">VH VVaG</span>
+            <span class="company-logo-text">JAUGAPOL</span>
+            <span class="company-logo-text">JURATE HOTEL</span>
         </div>
 
         <!-- What I Can Help With -->
@@ -313,6 +339,8 @@
                 <li>Team leadership and project delivery</li>
             </ul>
         </section>
+
+        <div class="section-separator"></div>
 
         <!-- Experience -->
         <section class="experience-section">
